@@ -9,22 +9,19 @@ public class symmetricpair {
         HashMap < Integer, Integer > mp = new HashMap < Integer, Integer > ();
         System.out.println("The Symmetric Pairs are: ");
         for (int i = 0; i < arr.length; i++) {
-            int first = arr[i][0]; //1 ,   2
-//            System.out.println(first);
-            int second = arr[i][1]; //2 ,   1
-//            System.out.println(second);
-//            System.out.println(mp.get(second)); //null, 2
-            if (mp.get(second) != null && mp.get(second) == first) { //1->{2}==2
+            int first = arr[i][0];      
+            int second = arr[i][1];   
+            if (mp.get(second) != null && mp.get(second) == first) { 
                 System.out.println("("+first + " " + second+") ");
             } else {
-                mp.put(first, second); //<1,2>
+                mp.put(first, second); 
             }
         }
 
     }
 }
-//<1,2>
-//<2,1>
-//<4,5>
-//<3,4>
-//<5,4>
+//<key-1,value-2>
+//<key-2,value-1> mp.get(1(second))->returns value 2 which is equal to current first(2), hence symmetric
+//<key-4,value-5>
+//<key-3,value-4>
+//<key-5,value-4>

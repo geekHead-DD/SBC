@@ -21,3 +21,6 @@ public class Binarysearch {
         System.out.print("The element is present in "+ans+" index");
     }
 }
+// Time Complexity: O(logn).
+
+// Space Complexity: O(1)
